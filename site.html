@@ -1,37 +1,162 @@
-<body style="margin: 0;background: #020841;"></body>
-    <div style="width: 1168px; height: 79px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px"></div>
-    <div style="width: 1125px; height: 360px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px"></div>
-    <div style="width: 365px; height: 588px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px"></div>
-    <div style="width: 365px; height: 588px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px"></div>
-    <div style="width: 365px; height: 588px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px"></div>
-    <div style="left: 760px; top: 44px; position: absolute; color: white; font-size: 60px; font-family: Outfit; font-weight: 600; text-transform: uppercase; line-height: 27.50px; word-wrap: break-word">Elmer</div>
-    <a href="https://www.authpro.com/auth/Bobtheblob/?action=reg"; style="left: 1508px; top: 42px; position: absolute; opacity: 0.80; text-align: center; color: rgba(255, 255, 255, 0.67); font-size: 24px; font-family: Roboto Mono; font-weight: 400; text-decoration: underline; line-height: 27.50px; word-wrap: break-word">Sign Up</a>
-    <a href="https://www.authpro.com/auth/Bobtheblob/"; style="left: 1657px; top: 42px; position: absolute; opacity: 0.80; text-align: center; color: rgba(255, 255, 255, 0.67); font-size: 24px; font-family: Roboto Mono; font-weight: 400; text-decoration: underline; line-height: 27.50px; word-wrap: break-word">Login</a>
-    <a href="ko-fi/elmersadventures"; style="left: 1778px; top: 42px; position: absolute; opacity: 0.80; text-align: center; color: rgba(255, 255, 255, 0.67); font-size: 24px; font-family: Roboto Mono; font-weight: 400; text-decoration: underline; line-height: 27.50px; word-wrap: break-word">Donate</a>
-    <div style="width: 461px; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">First adventure of Elmer</div>
-    <div style="left: 875px; top: 1160px; position: absolute; text-align: center; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">Gabi</div>
-    <div style="left: 1280px; top: 1160px; position: absolute; text-align: center; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">Ari</div>
-    <div style="left: 1618px; top: 1160px; position: absolute; text-align: center; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">Elmer<br/></div>
-    <div style="left: 1222px; top: 571px; position: absolute; text-align: center; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">Actors:</div>
-    <div style="width: 418px; height: 142px; color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 28px; word-wrap: break-word">An educative story about an elephant from another story learning new things about frendship.</div>
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <style>
+    .names {
+      left: 875px;
+      text-align: center;
+      color: #BDC6E2;
+      font-size: 50px;
+      font-family: Outfit;
+      font-weight: 450;
+      line-height: 66px;
+      word-wrap: break-word
+    }
+
+    .actorCard {
+      width: 365px;
+      height: 588px;
+      background: #181154;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 17.50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .actorPicture {
+      width: 274px;
+      height: 440px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
+      border-radius: 17.50px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body style="margin: 0;background: #020841; display: flex;
+flex-direction: column; align-items: center;">
+  <div style="width: 1168px; height: 79px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px;
+  display: flex; justify-content: space-between;
+  margin: 25px;
+  align-items: center;">
+    <div
+      style="margin: 25px; color: white; font-size: 60px; font-family: Outfit; font-weight: 600; text-transform: uppercase; line-height: 27.50px; word-wrap: break-word">
+      Elmer</div>
+    <div style="margin: 10px;">
+      <a href="https://www.authpro.com/auth/Bobtheblob/?action=reg" ;
+        style="margin: 10px; opacity: 0.80; text-align: center; color: rgba(255, 255, 255, 0.67); font-size: 24px; font-family: Roboto Mono; font-weight: 400; text-decoration: underline; line-height: 27.50px; word-wrap: break-word">Sign
+        Up</a>
+      <a href="https://www.authpro.com/auth/Bobtheblob/" ;
+        style="margin: 10px; opacity: 0.80; text-align: center; color: rgba(255, 255, 255, 0.67); font-size: 24px; font-family: Roboto Mono; font-weight: 400; text-decoration: underline; line-height: 27.50px; word-wrap: break-word">Login</a>
+      <a href="ko-fi/elmersadventures" ;
+        style="margin: 10px; opacity: 0.80; text-align: center; color: rgba(255, 255, 255, 0.67); font-size: 24px; font-family: Roboto Mono; font-weight: 400; text-decoration: underline; line-height: 27.50px; word-wrap: break-word">Donate</a>
+    </div>
+  </div>
+  <div
+    style="width: 1125px; height: 360px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px;  margin: 25px;">
+    <div style="margin: 50px;">
+      <div
+        style="width: 461px; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">
+        First adventure of Elmer</div>
+      <div
+        style="width: 418px; height: 142px; color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 28px; word-wrap: break-word">
+        An educative story about an elephant from another story learning new things about frendship.</div>
+    </div>
+
     <div style="width: 170px; height: 214px">
-        <iframe width="497.77777777778" height="280" src="https://www.youtube.com/embed/-I7mPqqy1Uc?si=rVwDFjX6PDkbKe8S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="497.77777777778" height="280" src="https://www.youtube.com/embed/-I7mPqqy1Uc?si=rVwDFjX6PDkbKe8S"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div style="width: 1125px; height: 360px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px"></div>
-    <div style="width: 461px; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">Used Software</div>
-    <div style="width: 130px; height: 214px">
-      <div style="left: 0px; top: 140px; position: absolute; text-align: center"><span style="color: white; font-size: 24px; font-family: Outfit; font-weight: 400; line-height: 28px; word-wrap: break-word">Figma<br/></span><span style="color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 40px; word-wrap: break-word">Site design</span></div>
-      <img style="width: 130px; height: 130px" src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/apps-figma-icon-1024x1024-cb4t8vyj-1.png" />
+  </div>
+  <div
+    style="margin-top: 25px; text-align: center; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word">
+    Actors:</div>
+  <div style="width: 1125px; display: flex; justify-content: space-between;  margin: 25px;">
+    <div class="actorCard">
+      <img
+        class="actorPicture"
+        src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/image-2024-12-09-200442100-1@2x.png" />
+      <div class="names">
+        Gabi
+      </div>
     </div>
-    <div style="width: 165px; height: 214px">
-      <div style="left: 0px; top: 140px; position: absolute; text-align: center"><span style="color: white; font-size: 24px; font-family: Outfit; font-weight: 400; line-height: 28px; word-wrap: break-word">DaVinci resolve<br/></span><span style="color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 40px; word-wrap: break-word">Video editing</span></div>
-      <img style="width: 130px; height: 130px" src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/davinci-resolve-studio-1.png" />
+    <div class="actorCard">
+      <img
+        class="actorPicture"
+        src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/ari-1@2x.png" />
+      <div class="names">
+        Ari</div>
     </div>
-    <div style="width: 170px; height: 214px">
-      <div style="width: 170px; height: 74.35px; text-align: center"><span style="color: white; font-size: 24px; font-family: Outfit; font-weight: 400; line-height: 28px; word-wrap: break-word">Real Scaler<br/></span><span style="color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 40px; word-wrap: break-word">Video Upscaling</span></div>
-      <img style="width: 130px; height: 130.61px" src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/logo-1.png" />
+    <div class="actorCard">
+      <img
+        class="actorPicture"
+        src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/elm-r-1@2x.png" />
+      <div class="names">
+        Elmer</div>
     </div>
-    <img style="width: 274px; height: 440px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) inset; border-radius: 17.50px" src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/image-2024-12-09-200442100-1@2x.png" />
-    <img style="width: 274px; height: 440px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) inset; border-radius: 17.50px" src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/ari-1@2x.png" />
-    <img style="width: 274px; height: 440px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) inset; border-radius: 17.50px" src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/elm-r-1@2x.png" />
-    <div style="width: 170px; height: 150px"></div>
+  </div>
+  <div
+    style="width: 1125px; height: 360px; background: #181154; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); border-radius: 17.50px;    margin: 25px;">
+    <div
+      style="width: 461px; color: #BDC6E2; font-size: 60px; font-family: Outfit; font-weight: 700; line-height: 66px; word-wrap: break-word;      margin: 40px 0 0 40px;">
+      Used Software</div>
+    <div style="display: flex; justify-content: space-between; padding: 0 200px;">
+      <div style="width: 130px; height: 214px; display: flex; flex-direction: column; align-items: center;">
+        <img style="width: 130px; height: 130px"
+          src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/apps-figma-icon-1024x1024-cb4t8vyj-1.png" />
+        <div style="text-align: center">
+          <div
+            style="color: white; font-size: 24px; font-family: Outfit; font-weight: 400; line-height: 28px; word-wrap: break-word;            margin: 10px 0 0; ">
+            Figma
+          </div>
+          <div
+            style="color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 40px; word-wrap: break-word">
+            Site
+            design</div>
+        </div>
+      </div>
+      <div style="width: 165px; height: 214px; display: flex; flex-direction: column; align-items: center;">
+        <img style="width: 130px; height: 130px"
+          src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/davinci-resolve-studio-1.png" />
+        <div style="text-align: center">
+          <div style="color: white; font-size: 24px; font-family: Outfit; font-weight: 400; line-height: 28px; word-wrap: break-word;
+            margin: 10px 0 0;">
+            DaVinci
+            resolve</div>
+          <div
+            style="color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 40px; word-wrap: break-word">
+            Video
+            editing</div>
+        </div>
+      </div>
+      <div style="width: 170px; height: 214px; display: flex; flex-direction: column; align-items: center;">
+        <img style="width: 130px; height: 130.61px"
+          src="https://cdn.animaapp.com/projects/67592194f6530e6235577ea4/releases/675921b25cfd8fd409476925/img/logo-1.png" />
+        <div style="width: 170px; height: 74.35px; text-align: center">
+          <div
+            style="color: white; font-size: 24px; font-family: Outfit; font-weight: 400; line-height: 28px; word-wrap: break-word;            margin: 10px 0 0;">
+            Real
+            Scaler</div>
+          <div
+            style="color: white; font-size: 24px; font-family: Outfit; font-weight: 100; line-height: 40px; word-wrap: break-word">
+            Video
+            Upscaling</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 170px; height: 150px"></div>
+</body>
+
+</html>
