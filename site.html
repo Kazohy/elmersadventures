@@ -30,6 +30,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
     }
 
     .actorPicture {
@@ -38,6 +52,25 @@
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
       border-radius: 17.50px;
       margin-top: 25px;
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: white;
+      transform: rotateY(180deg);
     }
   </style>
 </head>
@@ -91,6 +124,18 @@ flex-direction: column; align-items: center;">
         Gabi
       </div>
     </div>
+    <div class="actorCard">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
     <div class="actorCard">
       <img
         class="actorPicture"
